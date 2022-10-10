@@ -146,18 +146,24 @@
       <section>
         <div class="container-fluid text-start">
           <div class="row">
-            <div class="conteiner-fluid d-sm-inline d-lg-none col-sm-12 border border-warning border-opacity-25 border-5 border-bottom-0 rounded-0">
-              <div class="col-sm-6">
-                <label for="search"></label>
-                <input type="search" name="search" id="search" placeholder="Busqueda" class="container-fluid border border-secondary border-opacity-25 rounded-3 Busqueda" >
-              </div>
-              <div class="d-flex col-sm-6">
-                <label for="categorias"></label>
-                <select name="categorias" id="categorias">
-                  <option value="Categoria 1">Categoria 1</option>
-                  <option value="Categoria 2">Categoria 2</option>
-                  <option value="Categoria 3">Categoria 3</option>
-                </select>
+            <div class="conteiner-fluid d-sm-inline d-lg-none col-12 border border-warning border-opacity-25 border-5 border-bottom-0 rounded-0">
+              <div class="row">
+                <div class="col-4">
+                  <label for="search"></label>
+                  <input type="search" name="search" id="search" placeholder="Busqueda" class="border border-secondary border-opacity-25 rounded-3 Busqueda" >
+                </div>
+                <div class="col-6 d-flex align-items-end">
+                  <div class="btn-group w-100">
+                    <button type="button" class="btn btn-success dropdown-toggle btnsm border border-success border-opacity-25" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Categoria 1</a></li>
+                      <li><a class="dropdown-item" href="#">Categoria 2</a></li>
+                      <li><a class="dropdown-item" href="#">Categoria 3</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-7 col-sm-12 border border-warning border-opacity-25 border-4">
