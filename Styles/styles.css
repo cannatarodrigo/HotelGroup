@@ -59,3 +59,55 @@ li a {
 .botonns {
   padding-bottom: 10px;
 }
+.NavbarColor {
+  background-color: #73A9AD;
+}
+.BottonNavPrincipal {
+  background-color: #90C8AC
+}
+.ModalColorUnoNav {
+  background-color: #F5F0BB;
+}
+.ModalColorDosNav {
+  background-color: #C4DFAA;
+}
+.BottonNavModalUno {
+  background-color: #C4DFAA;
+}
+.BottonNavModalDos {
+  background-color: #73A9AD;
+}
+nav {
+  background-color: #73A9AD;
+}
+
+.ColorLogin  {
+  background-color: #90C8AC;
+}
+.modalUno {
+  background-color: #F5F0BB;
+}
+.modalDos {
+  background-color: #C4DFAA;
+}
+.bottonUno {
+  background-color: #C4DFAA;
+}
+.bottonDos {
+  background-color: #73A9AD;
+}
+.LoginHotel {
+  margin-top: 150px; margin-bottom: 200px; background-color: #90C8AC; height: 600px;
+}
+.ModalLoginUno {
+  background-color: #F5F0BB;
+}
+.ModalLoginDos {
+  background-color: #C4DFAA;
+}
+.ButtonLoginModal {
+  background-color: #73A9AD;
+}
+.widthImage {
+  width: 480px;
+}
