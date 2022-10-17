@@ -29,6 +29,10 @@ ul {
 padding: 10px;
 }
 
+.cate_pub {
+  background-color: #EDE4E0;
+}
+
 li {
   font-size: x-large;
   list-style: none;
