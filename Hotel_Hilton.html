@@ -1,338 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="ColorHtml">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hilton Garden Inn Tucuman</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
- <link rel="stylesheet" href="./Styles/styles.css" />
-
+  <title>Hotel Hilton Garden</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./Styles/styles.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #73A9AD;">
-      <div class="container-fluid mx-lg-5 ">
-        <a href="./index.html"> <img class="ms-sm-3 ms-md-3 ms-lg-1" src="./Images/Hoteles/Logo_nav.png" alt="logo" width="90px"></a>
-        <a class="navbar-brand fw-normal fs-3" href="#">Hotel Group</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link fw-semibold pe-4" href="#">Acerca de Nosotros</a>
-            <a class="nav-link fw-semibold pe-4" href="#">Contacto</a>
-            <a class="nav-link fw-semibold pe-4" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribirme</a>
-            <a href="./error404.html"><button type="button" class="btn fw-semibold" style="background-color: #90C8AC;">Log In</button></a>
-          </div>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid mx-lg-5 ">
+      <a href="./index.html"> <img class="ms-sm-3 ms-md-3 ms-lg-1" src="./Images/Hoteles/Logo_nav.png" alt="logo" width="90px"></a>
+      <a class="navbar-brand fw-normal fs-3" href="./error404.html">Hotel Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link fw-semibold pe-4" href="#">Acerca de Nosotros</a>
+          <a class="nav-link fw-semibold pe-4" href="#">Contacto</a>
+          <a class="nav-link fw-semibold pe-4" href="./error404.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribirme</a>
+          <a href="./login.html"><button type="button" class="btn fw-semibold ColorLogin">Log In</button></a>
         </div>
       </div>
-    </nav>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="background-color: #F5F0BB;">
-          <div class="modal-header" style="background-color: #C4DFAA;">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Suscríbete a nuestro Blog</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modalUno">
+        <div class="modal-header modalDos">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Suscríbete a nuestro Blog</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bottonUno" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn bottonDos">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="ColorHeader">
+    <div class="container MarginHead">
+    <h1 class="text-center TituloSombra">Hotel Hilton Garden</h1>
+  </div>
+    <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner w-100 rounded shadow-lg">
+        <div class="carousel-item active p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Hotel_Hilton_Garden/portada_hotel_hilton.jpg" class="shadow-lg d-block w-100 rounded" alt="Habitacion"></a>
+        </div>
+        <div class="carousel-item  p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Hotel_Hilton_Garden/habitaciones_hotel_hilton10.jpg" class="shadow-lg d-block w-100 rounded" alt="Habitacion"></a>
+        </div>
+        <div class="carousel-item p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Hotel_Hilton_Garden/habitacion_hotel_hilton20.jpg" class="shadow-lg d-block w-100 rounded" alt="Habitacion"></a>
+        </div>
+        <div class="carousel-item p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Hotel_Hilton_Garden/hilton-garden-inn-tucuman30.jpg" class="shadow-lg d-block w-100 rounded" alt="Habitacion"></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container text-center">
+      <h1 class="text-center m-5 shadow ColorHab">Nuestras habitaciones</h1>
+      <div class="row">
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Dos camas dobles</h3>
+        <img src="./Images/Hotel_Hilton_Garden/camas_dobles.jpg" alt="" class="w-100 m-1 rounded shadow-sm">
+        <p class="w-100 mb-3">Refrigerador, cafetera, WiFi, mesa de trabajo, silla ergonómica, HDTV. Siéntase como en casa en esta habitación con dos camas dobles Garden Sleep System. Póngase al día con su trabajo en el amplio escritorio con silla ergonómica o disfrute de su programa de televisión favorito en el televisor de alta definición. Esta habitación también cuenta con una cafetera Keurig® y un refrigerador, perfectos para guardar cualquier refrigerio que pueda necesitar. El acceso WiFi gratuito también está disponible.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Una cama king</h3>
+        <img src="./Images/Hotel_Hilton_Garden/cama_king_nueva.jpg" alt="" class="w-100 m-1 rounded shadow-sm">
+        <p class="w-100 mb-3">Refrigerador, microondas, cafetera, WiFi, escritorio, silla ergonómica, HDTV. Siéntase como en casa en esta habitación con una cama Garden Sleep System tamaño king. Póngase al día con su trabajo en el amplio escritorio con silla ergonómica o disfrute de su programa de televisión favorito en el televisor de alta definición. Esta habitación también cuenta con una cafetera Keurig®, un microondas y un refrigerador, perfectos para preparar y almacenar cualquier refrigerio que pueda necesitar. El acceso WiFi gratuito también está disponible.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Suite de un dormitorio</h3>
+        <img src="./Images/Hotel_Hilton_Garden/suite de 1 domitorio.jpg" alt="" class="w-100 m-1 rounded shadow-sm">
+        <p class="w-100 mb-3">Sala de estar independiente, sofá cama, Wi-Fi, HDTV, refrigerador, microondas, espacio de trabajo. Relájese o póngase al día con sus negocios en esta cómoda suite de un dormitorio con nuestra exclusiva cama Garden Sleep System tamaño king. Relájese en la sala de estar independiente con un sofá cama y vea películas en el televisor de alta definición. Esta habitación también cuenta con un microondas, un refrigerador y una cafetera Keurig® para que se sienta como en casa. Las comodidades de negocios inteligentes incluyen un amplio escritorio con una silla ergonómica y Wi-Fi de cortesía.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Suit con piscina de hidromasajes</h3>
+        <img src="./Images/Hotel_Hilton_Garden/master_suit.jpg" alt="" class="w-100 m-1 rounded shadow-sm">
+        <p class="w-100 mb-5">Hidromasaje, sala de estar, sofá cama, WiFi, refrigerador, microondas, escritorio, HDTV. Siéntase como en casa en esta suite King de un dormitorio con nuestra exclusiva cama Garden Sleep System y una bañera de hidromasaje. Relájese en el sofá cama de la sala de estar independiente con mesa de café y vea películas en el televisor de alta definición. Esta habitación cuenta con microondas, nevera y cafetera Keurig®. Las comodidades de negocios inteligentes incluyen un amplio escritorio de trabajo con silla ergonómica, iluminación de trabajo y Wi-Fi de cortesía.</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="m-4 col-5">
+          <h4>Dejanos tu comentario!</h4>
+          <br>
+          <form action="">
+          <label class="fw-semibold" for="nombre">Nombre y Apellido:</label>
+          <br>
+          <input class="rounded bg-light bg-opacity-50" type="text" id="nombre" name="nombre" required autocomplete="name">
+          <br>
+          <br>
+          <label class="fw-semibold" for="correo">Email:</label>
+          <br>
+          <input class="rounded bg-light bg-opacity-50" type="email" id="correo" name="correo" required autocomplete="email">
+          <br>
+          <br>
+          <label class="fw-semibold" for="text">Comentario:</label>
+          <br>
+          <textarea class="rounded bg-light bg-opacity-50 dialogoComent" name="Mensaje" id="Mensaje" cols="50" rows="10"></textarea>
+          <br>
+          <label for="text">*Hasta 400 palabras</label>
+          <br>
+          <br>
+          <input class="btn fw-semibold ColorLogin" type="submit">
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="m-2 col-12">
+            <h3 class="mb-4">Comentarios:</h3>
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Camilo Hernandez</h5>
+            <p>Hace 1 meses</p>
+            <p>"Tuve una estadia increible, recomiendo al 100% el hotel."</p >
+            <hr>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-            </form>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Antonia Lopez</h5>
+            <p class="">Hace 3 meses</p>
+            <p>"Nos hospedamos con toda la familia, y la verdad es que fue una experiencia unica, el personal estuvo en cada detalle."</p >
+            <hr>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: #C4DFAA ;">Cerrar</button>
-            <button type="button" class="btn" style="background-color: #73A9AD;">Suscribirme</button>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Tomas Alonso</h5>
+            <p class="">Hace 2 meses</p>
+            <p>"Es un hotel al que siempre quiero volver,"</p >
+            <hr>
+          </div>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Rita Campero</h5>
+            <p class="">Hace 4 meses</p>
+            <p>"La comida que me sirvieron estuvo fria las dos veces que pedi, sin embargo hice el reclamo y rapidamente lo solucionaron"</p >
+            <hr>
+          </div>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Pablo Castro </h5>
+            <p class="">Hace 5 meses</p>
+            <p>"Hicimos reserva para el almuerzo con unos amigos y la pasamos tan bien que entre charlas y risas llegamos a la merienda."</p >
+            <hr>
+            <br>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <footer class="footer d-flex align-items-center container-fluid row p-0 m-0">
+    <div class="col-sm-1 d-none d-sm-block">
+      <img src="./Images/Hoteles/Logo Provisorio.png" alt="Logo del Blog" class="w-100" />
+    </div>
+    <div class="col-12 col-sm-7 text-center">
+      <a href="./error404.html" class="bi bi-instagram"></a>
+      <a href="./error404.html" class="bi bi-twitter"></a>
+      <a href="./error404.html" class="bi bi-facebook"></a>
+    </div>
+    <div class="col-sm-4 d-none d-sm-block">
+        Copyright&copy; 2022 - Página creada por HotelGroup - Todos los derechos reservados
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
   
-    
-    <main class="container-fluid">
-      <section>
-        <div class="container">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Images/Hoteles/Hilton-Garden-Hotel.jpg" style="height:600px ;"  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/Hotel_Hilton_Garden/TUCGIGI_quicklook_full_kingsuite habitaciones1.jpg" style="height:600px ;" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/Hotel_Hilton_Garden/TUCGIGI_gallery_elmercadorestaurant comedor 2.jpg" style="height:600px ;" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/Hotel_Hilton_Garden/TUCGIGI_quicklook_full_pool_piscina.jpg" style="height:600px;" class="d-block w-100" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/Hotel_Hilton_Garden/TUCGIGI_gallery_fitness gimnasio.jpg" style="height:600px;" class="d-block w-100" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/Hotel_Hilton_Garden/TUCGIGI_quicklook_full_meetheater teatro1.jpg" style="height:600px;" class="d-block w-100" alt="">
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
-
-      <section class="container">
-        <br>
-        <br>
-        <div class="container p-4 text-center">
-        <h1>Hilton Garden Inn Tucuman</h1>
-        <br>
-        <p>Somos parte del complejo Central Tucumano, a dos kilómetros del centro de la ciudad. Nuestro hotel se encuentra a pasos del Casino de Tucumán ya 14 km del Aeropuerto Internacional Benjamín Matienzo. Nuestro restaurante, El Mercado, sirve desayuno, almuerzo y cena. Hay bebidas y aperitivos disponibles en el Pavilion Pantry, abierto las 24 horas.</p>
-        </div>
-        <br>
-        <br>
-      </section>
-
-
-      
-      <section>
-<<<<<<< HEAD
-        <div class="container" style="text-align:center;">
-          <h2>Nuestras Amenidades</h2>
-          <div class="container d-flex m-5" style="height:180px; width:180px;">
-          <img src="./Images/Hotel_Hilton_Garden/estacionamiento_gatis_hilton.jpeg" alt="estacionamiento_gratis_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/wifi_gratis_hilton.jpeg" alt="wifi_gratis_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/habitaciones_para_no_fumadores_hilton.jpeg" alt="habitaciones_para_no_fumadores_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/restaurante_hilton.jpeg" alt="restaurante_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/piscina_hilton.jpeg" alt="piscina_al_aire_libre_hilton">
-          </div>
-          <div class="container d-flex m-5" style="height:180px; width:180px;">
-          <img src="./Images/Hotel_Hilton_Garden/gimnasio_hilton.jpeg" alt="gimnasio_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/habitaciones_que_admiten_mascotas_hilton.jpeg" alt="habitaciones_que_admiten_mascotas_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/Servio_de_habitacion_hilton.jpeg" alt="servicio_de_habitaciones">
-          <img src="./Images/Hotel_Hilton_Garden/centro_de_negocios_hilton.jpeg" alt="centro_de_negocios_hilton">
-          <img src="./Images/Hotel_Hilton_Garden/salas_de_reuniones_hilton.jpeg" alt="salas_de_reuniones_hilton">
-          </div>
-          <br>
-          <br>
-=======
-        <h2 class="text-center p-4">Nuestras Amenidades</h2>
-        <div class="container-fluid d-flex row justify-content-around">
-          <div class="card col-1" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/estacionamiento_gatis_hilton.jpeg" class="card-img-top" alt="estacionamiento">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/wifi_gratis_hilton.jpeg" class="card-img-top" alt="wifi">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/habitaciones_para_no_fumadores_hilton.jpeg" class="card-img-top" alt="habitaciones_para_no_fumadores">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/restaurante_hilton.jpeg" class="card-img-top" alt="restaurante_en_el_lugar">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/piscina_hilton.jpeg" class="card-img-top" alt="piscina_al_aire_libre">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/gimnasio_hilton.jpeg" class="card-img-top" alt="gimnasio">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/habitaciones_que_admiten_mascotas_hilton.jpeg" class="card-img-top" alt="habitaciones_que_admiten_mascotas">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/Servio_de_habitacion_hilton.jpeg" class="card-img-top" alt="servicio_de_habitacion">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/centro_de_negocios_hilton.jpeg" class="card-img-top" alt="centro_de_negocios">
-          </div>
-          <div class="card col-3" style="width: 18rem;">
-            <img src="./Images/Iconos_Amenities/salas_de_reuniones_hilton.jpeg" class="card-img-top" alt="salas_de_reuniones">
-          </div>
->>>>>>> 2c93668c4a2fa4cc273edfbac89f4fd7c21ee424
-        </div>
-      </section>
-    
-        
-      
-
-<<<<<<< HEAD
-      <section class="container-fluid">
-        <div class="text-center ">
-            <h3>Nuestras propuestas</h3>
-            <div class="card_propuestas">
-            <div class="card mb-3 " style="margin: 60px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./Images/Hotel_Hilton_Garden/desayuno_buffet_hilton.jpeg" class="img-fluid rounded-start" style="width:320px; height:250px;" alt="desayuno_buffet_hilton">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">DESAYUNO BUFFET</h5>
-                    <p class="card-text">Incluye:Cafeteria, Panadería, pastelería, jugos naturales, fiambres, frutas, yogures, variedad de cereales y semillas. Especialidades calientes: Huevos revueltos, omelettes, panqueques, tostadas francesas. <br> Precio por persona:$1800 </p>
-                    <a href="#" style="background:#90C8AC; color:black;"  class="btn btn-primary">MAS INFORMACION</a>
-                  </div>
-=======
-      <section>
-        <div class="container-fluid text-center ">
-          <h3>Nuestras propuestas</h3>
-          <div class="card_propuestas">
-          <div class="card mb-3 " style="margin: 60px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./Images/Hotel_Hilton_Garden/desayuno_buffet_hilton.jpeg" class="img-fluid rounded-start" style="width:320px; height:250px;" alt="desayuno_buffet_hilton">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">DESAYUNO BUFFET</h5>
-                  <p class="card-text">Incluye:Cafeteria, Panadería, pastelería, jugos naturales, fiambres, frutas, yogures, variedad de cereales y semillas. Especialidades calientes: Huevos revueltos, omelettes, panqueques, tostadas francesas. <br> Precio por persona:$1800 </p>
-                  <a href="./error404.html" style="background:#90C8AC; color:black;"  class="btn btn-primary">MAS INFORMACION</a>
->>>>>>> 2c93668c4a2fa4cc273edfbac89f4fd7c21ee424
-                </div>
-              </div>
-            </div>
-            </div>
-        </div>
-          <div class="card mb-3" style="margin: 60px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./Images/Hotel_Hilton_Garden/menu_ejecutivo_hilton.jpeg" class="img-fluid rounded-start" style="width:320px; height:250px;" alt="menu_ejecutivo_hilton">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">MENU EJECUTIVO</h5>
-                  <p class="card-text">Incluye: Plato principal a elección.Postre. 1 bebida sin alcohol. Café o Té. <br> Precio por persona: $2600</p> 
-                  <br>
-                  <a href="./error404.html" style="background:#90c8ac; color:black;"    class="btn btn-primary">MAS INFORMACION</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3" style="margin: 60px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./Images/Hotel_Hilton_Garden/brunch_hilton.jpeg"  class="img-fluid rounded-start" style="width:320px; height: 250px;" alt="brunch_hilton">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">SUNDAY BRUNCH</h5>
-                  <p class="card-text">Incluye: Buffet de ensaladas, quesos y fiambres, entradas frías, panes artesanales. Principales: Carnes asadas, embutidos, pasta. y guarniciones calientes. Postre: gran variedad de postres, tartas, tortas. Bebida sin alcohol libre, copa de vino, café o Té  <br> Precio por persona: $3850</p> 
-                  <br>
-                  <a href="./error404.html" style="background:#90C8AC; color:black;"     class="btn btn-primary">MAS INFORMACION</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-      </section>
-
-
-
-      <section class="container-fluid d-flex">
-        <div class="text-center">
-          <h4>Eventos espciales</h4>
-          <br>
-          <br>
-          <div class="row row-cols-1 row-cols-md-4 g-4 text-center m-3">
-          <div class="col">
-            <div class="card">
-              <img src="./Images/Hotel_Hilton_Garden/niños_off_hilton.jpeg" style="height:200px; width:236px;" class="card-img-top" alt="niños_off_hilton">
-              <div class="card-body">
-                <h5 class="card-title">NIÑOS OFF</h5>
-                <br>
-                <br>
-                <p class="card-text">Niños cenan gratis. <br> Máximo 3 niños por mesa.</p>
-                <br>
-                <a href="./error404.html" style="background: #90C8AC; color:black;" class="btn btn-primary">MAS INFORMACION</a>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col">
-            <div class="card">
-              <img src="./Images/Hotel_Hilton_Garden/miercoles_de_mujeres_hilton.jpeg" style="height:200px; width:236px;" class="card-img-top" alt="miercoles_de_mujeres_hilton">
-              <div class="card-body">
-                <h5 class="card-title">MIERCOLES DE MUJERES</h5>
-                <p class="card-text"><br>30% de descuento <br> Mesas sólo de Mujeres </p>
-                <br>
-                <a href="./error404.html" style="background: #90C8AC; color: black;"  class="btn btn-primary">MAS INFORMACION</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col">
-            <div class="card">
-              <img src="./Images/Hotel_Hilton_Garden/cata_tapas_hilton.jpg" style="height:200px; width:236px;" class="card-img-top" alt="cata_tapas_hilton">
-              <div class="card-body">
-                <h5 class="card-title">CATA Y TAPAS</h5>
-                <br>
-                <p class="card-text">Degustación de 5 tapas acompañados por una exclusiva selección de etiquetas</p>
-                <a href="./error404.html" style="background:#90C8AC; color:black;"      class="btn btn-primary">MAS INFORMACION</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col">
-            <div class="card">
-              <img src="./Images/Hotel_Hilton_Garden/happry hour.jpeg" style="height:200px; width:236px;" class="card-img-top" alt="happy_hour">
-              <div class="card-body">
-                <h5 class="card-title">HAPPY HOUR</h5>
-                <br>
-                <p class="card-text">2x1 en Chalice Stella Artois. <br>
-                  2x1 en Fernet Branca. <br></p>
-                  <br>
-                  <br>
-                  <a href="./error404.html" style="background:#90C8AC; color:black;" class="btn btn-primary">MAS INFORMACION</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br>
-      <br>
-      <br>
-      <br>
-    </main>
-
-
-
-
-    <footer class="footer d-flex container-fluid row p-0 m-0">
-      <div class="col-sm-1 d-none d-sm-block">
-        <img src="./Images/Hoteles/Logo Provisorio.png" alt="Logo del Blog" class="w-100" />
-      </div>
-      <div class="col-12 col-sm-9 text-center">
-        <a href="./error404.html" class="bi bi-instagram"></a>
-        <a href="./error404.html" class="bi bi-twitter"></a>
-        <a href="./error404.html" class="bi bi-facebook"></a>
-      </div>
-      <div class="col-sm-2 d-none d-sm-block">
-          Copyright&copy; 2022 - Página creada por HotelGroup - Todos los derechos reservados
-      </div>
-    </footer>
-  
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
