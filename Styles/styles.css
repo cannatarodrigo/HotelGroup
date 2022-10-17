@@ -147,3 +147,7 @@ main {
 .altu {
   height: 158px;
 }
+
+.textarea {
+  resize: none;
+}
