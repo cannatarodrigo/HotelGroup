@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="ColorHtml">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Howard Jhonson</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./Styles/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid mx-lg-5 ">
+      <a href="./index.html"> <img class="ms-sm-3 ms-md-3 ms-lg-1" src="./Images/Hoteles/Logo_nav.png" alt="logo" width="90px"></a>
+      <a class="navbar-brand fw-normal fs-3" href="./error404.html">Hotel Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link fw-semibold pe-4" href="#">Acerca de Nosotros</a>
+          <a class="nav-link fw-semibold pe-4" href="#">Contacto</a>
+          <a class="nav-link fw-semibold pe-4" href="./error404.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribirme</a>
+          <a href="./login.html"><button type="button" class="btn fw-semibold ColorLogin">Log In</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modalUno">
+        <div class="modal-header modalDos">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Suscríbete a nuestro Blog</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bottonUno" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn bottonDos">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="ColorHeader">
+    <div class="container MarginHead">
+    <h1 class="text-center TituloSombra">Hotel Howard Jhonson</h1>
+  </div>
+    <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner w-100 rounded shadow-lg">
+        <div class="carousel-item active p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Imagenes_HowardJhonson/howard-johnson.jpg" class="shadow-lg d-block w-100 rounded" alt="Hotel"></a>
+        </div>
+        <div class="carousel-item  p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Imagenes_HowardJhonson/piscina_spa.jpg" class="shadow-lg d-block w-100 rounded" alt="Spa_piscina"></a>
+        </div>
+        <div class="carousel-item p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Imagenes_HowardJhonson/Gastronomia.jpg" class="shadow-lg d-block w-100 rounded" alt="Gastronomia"></a>
+        </div>
+        <div class="carousel-item p-2 p-sm-2 p-lg-2 p-xl-2">
+          <a href="#"><img src="./Images/Imagenes_HowardJhonson/habitacion_Twin.jpg" class="shadow-lg d-block w-100 rounded" alt="Habitacion"></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container text-center">
+      <h1 class="text-center m-5 shadow ColorHab">Ofrecemos</h1>
+      <div class="row">
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Habitaciones Variadas</h3>
+        <img src="./Images/Imagenes_HowardJhonson/habitacion_king.jpg" alt="habitaciones" class="w-100 m-1 rounded shadow-sm">
+        <p class="w-100 mb-3">Habitaciones: cuenta con una gran diversidad (King,Quenn,Single,Suite Deluxe,entre otras). Todas las habitaciones, distinguidamente decoradas y equipadas con mobiliario de madera, están insonorizadas gracias a sus ventanales con doble vidriado hermético. Tienen TV LED 32”, split F/C individual, escritorio, frigobar, room-service, entre otras facilidades. Todas las categorías incluyen desayuno buffet, Internet WiFi gratuito en todo el predio y estacionamiento sin cargo.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Instalaciones de Distracción</h3>
+        <img src="./Images//Imagenes_HowardJhonson/piscina_spa.jpg" alt="Spa_piscina" class="w-100 altu m-1 rounded shadow-sm">
+        <p class="w-100 mb-3">Picsina&Spa: piscina atemperada (25-30 grados todo el año) semicubierta es la mejor opción para las vacaciones, fines de semana largos o para relajarse tras una jornada de trabajo.todos los días, ofrecemos los tradicionales masajes de relax o descontracturantes, pero también mimos para tus pies, con piedras calientes, para sueño profundo y pulidos de todo tipo.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Amplia Gastronomia</h3>
+        <img src="./Images/Imagenes_HowardJhonson/Gastronomia.jpg" alt="Gastronomia" class="w-100 m-1 rounded shadow-sm">
+        <p class="w-100 mb-3">Somos restó: el antiguo chalet adquiere una atmósfera íntima cada noche, para disfrutar de una carta que conjuga cocina argentina, ingredientes norteños e influencias europeas. Así, Check Restó & Pintas es un nuevo espacio que combina el servicio, la variedad y el confort de un restaurante; con los espacios descontracturados, la música y el ambiente al aire libre de una cervecería.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3 p-4 shadow">
+        <h3>Recreación Terraza y Jardines</h3>
+        <img src="./Images/Imagenes_HowardJhonson/Terraza_recreacion.jpg" alt="Recreación" class="w-100 altu m-1 rounded shadow-sm">
+        <p class="w-100 mb-5">Jardines y juegos para chicos: el hotel dispone de un amplio jardín con juegos para niños (hamacas, toboganes, merenderos), además de una cancha de césped de fútbol 5. En la sala de juegos, un Smart TV los espera junto con mesa de ping pong, metegol y juegos para los más chicos. Y la terraza de relax es el rincón perfecto para el mate y las cartas por la tarde.</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="m-4 col-5">
+          <h4>Dejanos tu comentario!</h4>
+          <br>
+          <form action="">
+          <label class="fw-semibold" for="nombre">Nombre y Apellido:</label>
+          <br>
+          <input class="rounded bg-light bg-opacity-50" type="text" id="nombre" name="nombre" required autocomplete="name">
+          <br>
+          <br>
+          <label class="fw-semibold" for="correo">Email:</label>
+          <br>
+          <input class="rounded bg-light bg-opacity-50" type="email" id="correo" name="correo" required autocomplete="email">
+          <br>
+          <br>
+          <label class="fw-semibold" for="text">Comentario:</label>
+          <br>
+          <textarea class="rounded bg-light bg-opacity-50 dialogoComent" name="Mensaje" id="Mensaje" cols="50" rows="10"></textarea>
+          <br>
+          <label for="text">*Hasta 400 palabras</label>
+          <br>
+          <br>
+          <input class="btn fw-semibold ColorLogin" type="submit">
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="m-2 col-12">
+            <h3 class="mb-4">Comentarios:</h3>
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Pilar Nores Lascano</h5>
+            <p>Hace 2 meses</p>
+            <p>"Excelente opción si buscas relación precio/calidad. Habíamos estado en el Sheraton dos meses antes y el mobiliario, tamaño de la habitación, hidromasajes y pileta y el desayuno no tenían nada de qué quejarse."</p >
+            <hr>
+          </div>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Karen Ramirez</h5>
+            <p class="">Hace 3 meses</p>
+            <p>"Linda habitación (doble), cómoda, espaciosa, deberían actualizar las tv ya que son LED. Buen desayuno, súper completo. Deberían cerrar la galería que da acceso a las habitaciones de atrás ya que fui un día de lluvia y me mojé/tuve frío."</p >
+            <hr>
+          </div>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Silvia Beatriz Amatucci</h5>
+            <p class="">Hace 3 meses</p>
+            <p>"Tuvimos una linda estadía, podría ser un poco mejor el servicio. El Spa, lo más. La masajista una genia."</p >
+            <hr>
+          </div>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Gustavo Pinto</h5>
+            <p class="">Hace 4 meses</p>
+            <p>"Estadía muy placentera. Todo de primera, habitación, baño, desayuno, spa, zonas comunes. Perdí la tarjeta de la habitación y no hubo inconveniente ni cargos extra. Impecable, bien ubicado, tranquilo, con un lindo restó/cervecería adelante. Volveremos."</p >
+            <hr>
+          </div>
+          <div class="m-2 col-12">
+            <h5 class="m-0"> <i class="bi bi-person-circle me-2"></i>Valeria santillan</h5>
+            <p class="">Hace 5 meses</p>
+            <p>"Cenamos en grupo a la noche, muy rico el menú (pollo relleno con papas) abundante porción. Lugar limpio, acogedor, buen servicio. Mozos muy atentos. Lo único malo es que la cocina cierra a las 00.00 y apagan las luces a la 1.00 - muy temprano cuando celebras algún evento."</p >
+            <hr>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer class="footer d-flex align-items-center container-fluid row p-0 m-0">
+    <div class="col-sm-1 d-none d-sm-block">
+      <img src="./Images/Hoteles/Logo Provisorio.png" alt="Logo del Blog" class="w-100" />
+    </div>
+    <div class="col-12 col-sm-7 text-center">
+      <a href="./error404.html" class="bi bi-instagram"></a>
+      <a href="./error404.html" class="bi bi-twitter"></a>
+      <a href="./error404.html" class="bi bi-facebook"></a>
+    </div>
+    <div class="col-sm-4 d-none d-sm-block">
+        Copyright&copy; 2022 - Página creada por HotelGroup - Todos los derechos reservados
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+  
+</body>
+</html>
